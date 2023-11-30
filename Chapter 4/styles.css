@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: #1a855f;
+  width: 300px;
+  height: 100vh;
+  float: left;
+  padding: 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+}
+
+.social-icons a {
+  display: inline-flex; /* Ensures the circular background spans the icon */
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Set the width and height to create a circular background */
+  height: 40px;
+  border-radius: 50%; /* Make the background circular */
+  background-color: #333; /* Background color for the circle */
+  margin: 0 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transitions for hover effect */
+}
+
+.social-icons a:hover {
+  background-color: #555; /* Change the background color on hover */
+  transform: scale(
+    1.1
+  ); /* Add a slight scale effect on hover for a stylish appearance */
+}
+
+.navigation {
+  padding-left: 10px;
+  padding-block: 10px;
+  padding-bottom: 10px;
+}
+
+.navigation a i {
+  margin-right: 8px; /* Adjust spacing between icon and text as needed */
+  vertical-align: middle;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin: 15px 0;
+}
+
+.navigation li a {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.822);
+  text-decoration: none;
+  font-weight: bold; /* Make the text bold */
+  padding: 5px; /* Add padding for a larger clickable area */
+  border-radius: 5px; /* Add rounded corners for a nicer look */
+  transition: background-color 0.3s ease; /* Add a smooth background color transition on hover */
+}
+
+.navigation li a:hover {
+  color: #333; /* Change the background color on hover */
+}
+
+.main-content {
+  margin-left: 320px;
+  padding: 20px;
+}

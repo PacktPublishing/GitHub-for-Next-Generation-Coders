@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Explorer</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+<div id="startScreen" class="start-screen">
+    <h1>Welcome to Space Explorer</h1>
+    <input type="text" id="playerName" placeholder="Enter Your Name" />
+    <button id="startButton">Start Game</button>
+    <div id="highScores" class="high-scores">
+        <h2>High Scores</h2>
+        <ul id="highScoresList"></ul>
+    </div>
+    
+</div>
+<div id="gameOverScreen" class="game-over-screen" style="display: none;">
+    <h1>Game Over</h1>
+    <p id="finalScore"></p>
+    <button id="restartButton">Restart Game</button>
+</div>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <img id="starImage" src="images/star.png" style="display: none;" alt="Star">
+    <div id="spaceship">
+        <img src="images/rocket.png" width="40" height="50" alt="Spaceship">
+    </div>    
+    <script src="js/script.js"></script>
+</body>
+</html>

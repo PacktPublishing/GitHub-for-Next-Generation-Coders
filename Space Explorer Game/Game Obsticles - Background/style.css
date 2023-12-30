@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+#gameCanvas {
+  border: 1px solid white;
+}
+#spaceship {
+  position: absolute;
+  font-size: 40px; /* Adjust the size as needed */
+  color: silver; /* Adjust the color as needed */
+  /* Center the icon around the position */
+  transform: translate(-50%, -50%);
+}
+@keyframes blink {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.invincible {
+  animation: blink 1s linear infinite;
+}
+
+#gameCanvas {
+  background-image: url("background.png"); /* Replace with the path to your image */
+}
+
+#gameContainer {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}

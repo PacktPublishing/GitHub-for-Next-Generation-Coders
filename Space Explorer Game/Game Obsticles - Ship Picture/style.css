@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+#gameCanvas {
+  border: 1px solid white;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+#gameCanvas {
+  background-image: url("background.png"); /* Replace with the path to your image */
+}
+
+#gameContainer {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+#spaceship {
+  position: absolute;
+  width: 40px; /* Adjust based on your actual image size */
+  height: 40px; /* Adjust based on your actual image size */
+  transform: translate(800%, 120%); /* Center the image on coordinates */
+}
+
+#spaceship.invincible {
+  animation: blink 1s linear infinite;
+}

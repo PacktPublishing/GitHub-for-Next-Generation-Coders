@@ -1,0 +1,176 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+#gameCanvas {
+  border: 1px solid white;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+#gameCanvas {
+  background-image: url("../images/background.png"); /* Replace with the path to your image */
+}
+
+#gameContainer {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+#spaceship {
+  position: absolute;
+  width: 40px; /* Adjust based on your actual image size */
+  height: 40px; /* Adjust based on your actual image size */
+  transform: translate(800%, 120%); /* Center the image on coordinates */
+}
+
+#spaceship.invincible {
+  animation: blink 1s linear infinite;
+}
+
+.obstacle {
+  position: absolute;
+  width: 60px; /* Adjust based on your obstacle image size */
+  height: 60px; /* Adjust based on your obstacle image size */
+}
+
+/* Basic styling for the entire body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Overlay styling for the start screen */
+.start-screen {
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000; /* High z-index to stay on top */
+}
+
+/* Styling for the title on the start screen */
+.start-screen h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* Styling for the input field */
+.start-screen input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Styling for the start button */
+.start-screen button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-screen button:hover {
+  background-color: #0056b3;
+}
+
+.game-over-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/gameover.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.game-over-screen h1 {
+  font-size: 4em;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#restartButton {
+  padding: 15px 30px;
+  font-size: 1.5em;
+  color: white;
+  background-color: #e63946; /* A vibrant color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+#restartButton:hover {
+  background-color: #d62828; /* Darker shade for hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  animation: bounce 1s ease;
+}
+
+#finalScore {
+  font-size: 1.2em;
+  margin: 20px 0;
+  text-shadow: 1px 1px 3px #000;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

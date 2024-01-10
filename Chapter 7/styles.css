@@ -1,0 +1,307 @@
+:root {
+  --main-theme-color: #1a855f; /* Default theme color */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: var(--main-theme-color);
+  width: 200px;
+  height: 100vh;
+  float: left;
+  padding: 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  flex-basis: 25%; /* Adjust as needed based on design preference */
+  padding-right: 20px; /* Adds padding to the right side of the sidebar */
+  transition: width 0.3s ease;
+}
+
+.profile-image {
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+}
+
+.social-icons a {
+  display: inline-flex; /* Ensures the circular background spans the icon */
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Set the width and height to create a circular background */
+  height: 40px;
+  border-radius: 50%; /* Make the background circular */
+  background-color: #333; /* Background color for the circle */
+  margin: 0 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transitions for hover effect */
+}
+
+.social-icons a:hover {
+  background-color: #555; /* Change the background color on hover */
+  transform: scale(
+    1.1
+  ); /* Add a slight scale effect on hover for a stylish appearance */
+}
+
+.navigation {
+  padding-left: 10px;
+  padding-block: 10px;
+  padding-bottom: 10px;
+}
+
+.navigation a i {
+  margin-right: 8px; /* Adjust spacing between icon and text as needed */
+  vertical-align: middle;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin: 15px 0;
+}
+
+.navigation li a {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.822);
+  text-decoration: none;
+  font-weight: bold; /* Make the text bold */
+  padding: 5px; /* Add padding for a larger clickable area */
+  border-radius: 5px; /* Add rounded corners for a nicer look */
+  transition: background-color 0.3s ease; /* Add a smooth background color transition on hover */
+}
+
+.navigation li a:hover {
+  color: #333; /* Change the background color on hover */
+}
+
+.main-content {
+  margin-left: 250px; /* Adjusted to match sidebar width */
+  padding: 20px;
+  padding-left: 20px;
+  transition: margin-left 0.3s ease; /* Transition for the margin-left property */
+  flex: 1; /* This will ensure main content fills up the remaining space */
+}
+/* What I Do Header Section */
+.what-i-do-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.what-i-do-header h1 {
+  flex-grow: 1;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.what-i-do-header p {
+  flex-grow: 2;
+  margin-bottom: 20px;
+}
+
+.what-i-do-header .main-image {
+  flex-basis: 40%;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* CTA Buttons */
+.cta-buttons button {
+  background-color: var(--main-theme-color);
+  color: #fff;
+}
+
+.cta-buttons button:first-child {
+  margin-right: 15px;
+}
+
+/* What I Do Section */
+.what-i-do {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.what-i-do .service {
+  flex-basis: calc(33% - 20px);
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 40px;
+  color: var(--main-theme-color);
+  margin-bottom: 20px;
+}
+
+.service-description h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-description p {
+  margin: 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 20px; /* space between rows and columns */
+}
+
+.service {
+  border: 1px solid #e0e0e0; /* Optional: Add a border to each service box */
+  padding: 10px;
+  text-align: center; /* To center the content of each service box */
+}
+
+.service img {
+  width: 100px; /* Adjust the width of service images */
+  margin-bottom: 10px;
+}
+
+.portfolio-section {
+  padding: 50px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.portfolio-menu {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.portfolio-menu button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.portfolio-menu button.active {
+  background-color: var(--main-theme-color);
+  color: white;
+}
+.card-content {
+  padding: 1rem;
+}
+.card img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.dark-mode .portfolio-grid {
+  background-color: var(
+    --dark-mode-theme-collor
+  ); /* A darker background for the service in dark mode */
+  color: #ffffff; /* Light text color for better contrast against the dark background */
+}
+.dark-mode .portfolio-section {
+  background-color: var(
+    --dark-mode-theme-collor
+  ); /* A darker background for the service in dark mode */
+  color: #ffffff; /* Light text color for better contrast against the dark background */
+}
+.dark-mode .portfolio-menu {
+  margin: 20px 0;
+  color: #f8f8f8;
+}
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  text-align: left;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+  height: 100%;
+}
+
+#portfolio-section::before {
+  content: "";
+  display: block;
+  height: 80px; /* Adjust this value based on your needs */
+  margin: -80px 0 0; /* This should be the negative of the height value */
+}
+
+/* Overall Layout */
+.container {
+  display: flex;
+}

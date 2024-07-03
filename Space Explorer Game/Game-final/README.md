@@ -28,10 +28,10 @@ Space Invaders is an exciting and challenging shooting game set in space. Player
 
 ## Installation
 
-Clone the repository and open `index.html` in your browser to start playing:
+Clone the repository and open `Space Explorer Game/Game-final/index.html` in your browser to start playing:
 
 ```bash
-git clone https://github.com/error505/SpaceInvaders.git
+git clone https://github.com/PacktPublishing/Github-For-Young-Coders.git
 ```
 
 ## Technologies Used
@@ -42,8 +42,8 @@ git clone https://github.com/error505/SpaceInvaders.git
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/error505/SpaceInvaders/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/PacktPublishing/Github-For-Young-Coders/issues).
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/error505/SpaceInvaders/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/PacktPublishing/Github-For-Young-Coders/blob/main/Space%20Explorer%20Game/Game-final/LICENSE) for more information.

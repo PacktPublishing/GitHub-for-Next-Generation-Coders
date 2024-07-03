@@ -42,7 +42,7 @@ This portfolio website serves as a comprehensive showcase of my professional cap
 
 ### Installation
 
-Clone the repository to your local machine:
+Clone the repository to your local machine and the files from the chapter 13 folder:
 
 ```bash
 git clone https://github.com/PacktPublishing/Github-For-Young-Coders.git

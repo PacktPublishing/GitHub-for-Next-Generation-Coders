@@ -45,7 +45,7 @@ This portfolio website serves as a comprehensive showcase of my professional cap
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/error505/MyFirstRepo.git
+git clone https://github.com/PacktPublishing/Github-For-Young-Coders.git
 ```
 
 Navigate to the project directory:

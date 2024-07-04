@@ -1,2 +1,2 @@
-# Github-For-Young-Coders
-Github For Young Coders, published by Packt
+# GitHub-for-Next-Generation-Coders
+GitHub for Next Generation Coders, published by Packt

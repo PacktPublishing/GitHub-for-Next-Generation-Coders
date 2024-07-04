@@ -27,7 +27,7 @@ Space Explorer is an exciting and challenging shooting game set in space. Player
 Clone the repository and open `index.html` in your browser to start playing:
 
 ```bash
-git clone https://github.com/PacktPublishing/Github-For-Young-Coders.git
+git clone https://github.com/PacktPublishing/GitHub-for-Next-Generation-Coders.git
 ```
 
 ## Technologies Used
